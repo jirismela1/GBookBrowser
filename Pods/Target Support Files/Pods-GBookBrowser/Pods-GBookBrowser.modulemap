@@ -1,6 +1,0 @@
-framework module Pods_GBookBrowser {
-  umbrella header "Pods-GBookBrowser-umbrella.h"
-
-  export *
-  module * { export * }
-}
