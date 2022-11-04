@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		28975A1B2915A2190037D3C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28975A1A2915A2190037D3C0 /* AppDelegate.swift */; };
-		28975A1D2915A2190037D3C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28975A1C2915A2190037D3C0 /* SceneDelegate.swift */; };
 		28975A1F2915A2190037D3C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28975A1E2915A2190037D3C0 /* ViewController.swift */; };
 		28975A222915A2190037D3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28975A202915A2190037D3C0 /* Main.storyboard */; };
 		28975A242915A21E0037D3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28975A232915A21E0037D3C0 /* Assets.xcassets */; };
 		28975A272915A21E0037D3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28975A252915A21E0037D3C0 /* LaunchScreen.storyboard */; };
+		6BF222AC849099CAEB5804DE /* Pods_GBookBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99A105E30BA14349D019C87 /* Pods_GBookBrowser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212381A7E6197F75BA6718E1 /* Pods-GBookBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBookBrowser.release.xcconfig"; path = "Target Support Files/Pods-GBookBrowser/Pods-GBookBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		28975A172915A2190037D3C0 /* GBookBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBookBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28975A1A2915A2190037D3C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28975A1C2915A2190037D3C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28975A1E2915A2190037D3C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28975A212915A2190037D3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28975A232915A21E0037D3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28975A262915A21E0037D3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28975A282915A21E0037D3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99A105E30BA14349D019C87 /* Pods_GBookBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBookBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF499A5E266493E60846A0A7 /* Pods-GBookBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBookBrowser.debug.xcconfig"; path = "Target Support Files/Pods-GBookBrowser/Pods-GBookBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF222AC849099CAEB5804DE /* Pods_GBookBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,8 @@
 			children = (
 				28975A192915A2190037D3C0 /* GBookBrowser */,
 				28975A182915A2190037D3C0 /* Products */,
+				6C1AB62A85C82535FD9CD9AF /* Pods */,
+				8DE8173434F0D556AB4110FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				28975A1A2915A2190037D3C0 /* AppDelegate.swift */,
-				28975A1C2915A2190037D3C0 /* SceneDelegate.swift */,
 				28975A1E2915A2190037D3C0 /* ViewController.swift */,
 				28975A202915A2190037D3C0 /* Main.storyboard */,
 				28975A232915A21E0037D3C0 /* Assets.xcassets */,
@@ -67,6 +71,23 @@
 			path = GBookBrowser;
 			sourceTree = "<group>";
 		};
+		6C1AB62A85C82535FD9CD9AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF499A5E266493E60846A0A7 /* Pods-GBookBrowser.debug.xcconfig */,
+				212381A7E6197F75BA6718E1 /* Pods-GBookBrowser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8DE8173434F0D556AB4110FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D99A105E30BA14349D019C87 /* Pods_GBookBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28975A2B2915A21E0037D3C0 /* Build configuration list for PBXNativeTarget "GBookBrowser" */;
 			buildPhases = (
+				0D1285897F498E35E23CC927 /* [CP] Check Pods Manifest.lock */,
 				28975A132915A2190037D3C0 /* Sources */,
 				28975A142915A2190037D3C0 /* Frameworks */,
 				28975A152915A2190037D3C0 /* Resources */,
@@ -133,6 +155,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D1285897F498E35E23CC927 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBookBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28975A132915A2190037D3C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +187,6 @@
 			files = (
 				28975A1F2915A2190037D3C0 /* ViewController.swift in Sources */,
 				28975A1B2915A2190037D3C0 /* AppDelegate.swift in Sources */,
-				28975A1D2915A2190037D3C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +328,7 @@
 		};
 		28975A2C2915A21E0037D3C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF499A5E266493E60846A0A7 /* Pods-GBookBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +340,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +358,7 @@
 		};
 		28975A2D2915A21E0037D3C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 212381A7E6197F75BA6718E1 /* Pods-GBookBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +370,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
