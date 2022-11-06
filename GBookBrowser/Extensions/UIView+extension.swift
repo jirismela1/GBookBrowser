@@ -9,15 +9,24 @@ import UIKit
 
 extension UIView {
     
-    func fadeTransition(_ duration:CFTimeInterval) {
+    /**
+     Set fade transition to view
+     
+     - parameter duration:          CFTimeInterval
+     */
+    func fadeTransition(_ duration: CFTimeInterval) {
         let animation = CATransition()
-        animation.timingFunction = CAMediaTimingFunction(name:
-            CAMediaTimingFunctionName.easeInEaseOut)
-        animation.type = CATransitionType.fade
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        animation.type = .fade
         animation.duration = duration
         layer.add(animation, forKey: CATransitionType.fade.rawValue)
     }
     
+    /**
+     Set transition Cross Dissolve animation to view
+     
+     - parameter animation:          (()->Void)?
+     */
     func transitionCrossDissolveAnimation(_ animation: (()->Void)?) {
         UIView.transition(with: self,
                           duration: 1,

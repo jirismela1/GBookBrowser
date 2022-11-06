@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_screen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bBQ-Pz-ehz">
+                    <rect key="frame" x="96.666666666666686" y="407.66666666666669" width="200" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="T3w-Kl-qlg"/>
+                        <constraint firstAttribute="height" constant="37" id="vaf-cV-qhA"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bBQ-Pz-ehz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4GX-Ga-LeC"/>
+                <constraint firstItem="bBQ-Pz-ehz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gNA-vh-9Wd"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch_screen_icon" width="200" height="37"/>
+    </resources>
+</document>

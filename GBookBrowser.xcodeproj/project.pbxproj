@@ -28,6 +28,7 @@
 		28975A222915A2190037D3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28975A202915A2190037D3C0 /* Main.storyboard */; };
 		28975A242915A21E0037D3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28975A232915A21E0037D3C0 /* Assets.xcassets */; };
 		28975A272915A21E0037D3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28975A252915A21E0037D3C0 /* LaunchScreen.storyboard */; };
+		28F9EAFE29184155003BDA7B /* LaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F9EAFD29184155003BDA7B /* LaunchView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		28975A232915A21E0037D3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28975A262915A21E0037D3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28975A282915A21E0037D3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F9EAFD29184155003BDA7B /* LaunchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchView.xib; sourceTree = "<group>"; };
 		7D1A71C0F8995C5237208C87 /* Pods-GBookBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBookBrowser.release.xcconfig"; path = "Target Support Files/Pods-GBookBrowser/Pods-GBookBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		82A499CD7A5C25E65C6CB8FD /* Pods-GBookBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBookBrowser.debug.xcconfig"; path = "Target Support Files/Pods-GBookBrowser/Pods-GBookBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB0A505288380D09A90D9F0 /* Pods_GBookBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBookBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 				28975A252915A21E0037D3C0 /* LaunchScreen.storyboard */,
 				28975A282915A21E0037D3C0 /* Info.plist */,
 				280A43F029168C2100837D43 /* Localizable.strings */,
+				28F9EAFD29184155003BDA7B /* LaunchView.xib */,
 			);
 			path = GBookBrowser;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				280A43FF2916B51500837D43 /* SearchBookTableViewCell.xib in Resources */,
 				28975A272915A21E0037D3C0 /* LaunchScreen.storyboard in Resources */,
 				280A43FB2916B17400837D43 /* DetailBookViewCell.xib in Resources */,
+				28F9EAFE29184155003BDA7B /* LaunchView.xib in Resources */,
 				280A43EE29168C2100837D43 /* Localizable.strings in Resources */,
 				28975A242915A21E0037D3C0 /* Assets.xcassets in Resources */,
 				28975A222915A2190037D3C0 /* Main.storyboard in Resources */,

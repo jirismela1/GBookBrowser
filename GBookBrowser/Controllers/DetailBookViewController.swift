@@ -82,6 +82,7 @@ class DetailBookViewController: UIViewController {
         titleLabel.fadeTransition(0.2)
         titleLabel.text = data?.title
         // published date
+        publishedDateLabel.fadeTransition(0.2)
         publishedDateLabel.text = data?.getPublishedYear()
         // enable right bar item
         navigationItem.rightBarButtonItem?.isEnabled = !(BookDataSourceManager.shared().items[selectedIndex].saleInfo?.buyLink == nil)
