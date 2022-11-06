@@ -1,16 +1,24 @@
 PODS:
   - Alamofire (5.6.2)
+  - FSPagerView (0.8.3)
+  - Kingfisher (7.4.1)
 
 DEPENDENCIES:
   - Alamofire
+  - FSPagerView
+  - Kingfisher (~> 7.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FSPagerView
+    - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
 
-PODFILE CHECKSUM: 5f6036710f346e54b1830908a9539d28d9370cad
+PODFILE CHECKSUM: 1074163e751a83963c6e3d23071760dbc469d2e9
 
 COCOAPODS: 1.11.3

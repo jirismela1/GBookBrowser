@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  GBookBrowser
+
+  Created by Jiří Šmela on 05.11.2022.
+  
+*/
+
+
+"search_book_title"="Knihovna";
+"search_placeholder"="Vyhledat";
+"search_book_info_label_no_results"="Žádné výsledky vyhledavaní";
+"search_book_info_label"="Co si přejete vyhledat?";
+"book_detail_title"="Detail";
+"book_detail_desription"="Popis:";
+"book_detail_desription_is_empty"="Nenalezen žádný popis";

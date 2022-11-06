@@ -14,10 +14,6 @@ struct BookDataImage: Decodable {
     
     let smallThumbnail: String?
     let thumbnail: String?
-    let small: String?
-    let medium: String?
-    let large: String?
-    let extraLarge: String?
     
     
     //MARK: - Parse enum
@@ -25,10 +21,6 @@ struct BookDataImage: Decodable {
     enum CodingKeys: String, CodingKey {
         case smallThumbnail
         case thumbnail
-        case small
-        case medium
-        case large
-        case extraLarge
     }
     
     
@@ -40,15 +32,7 @@ struct BookDataImage: Decodable {
      - returns: String?
      */
     func getImageLink() -> String? {
-        if extraLarge != nil {
-            return extraLarge
-        } else if large != nil {
-            return large
-        } else if medium != nil {
-            return medium
-        } else if small != nil {
-            return small
-        } else if thumbnail != nil {
+       if thumbnail != nil {
             return thumbnail
         } else if smallThumbnail != nil {
             return smallThumbnail

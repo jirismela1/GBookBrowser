@@ -12,7 +12,7 @@ struct BookItem: Decodable {
     
     //MARK: - Properties
     
-    let data: BookData
+    let data: BookData?
     let saleInfo: BookSaleInfo?
     
     

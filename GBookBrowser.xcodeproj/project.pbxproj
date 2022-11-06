@@ -14,8 +14,17 @@
 		280A43E52916899000837D43 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43E42916899000837D43 /* BookData.swift */; };
 		280A43E7291689A100837D43 /* BookSaleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43E6291689A100837D43 /* BookSaleInfo.swift */; };
 		280A43E9291689B100837D43 /* BookDataImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43E8291689B100837D43 /* BookDataImage.swift */; };
+		280A43EE29168C2100837D43 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 280A43F029168C2100837D43 /* Localizable.strings */; };
+		280A43F429168CA600837D43 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43F329168CA600837D43 /* String+extension.swift */; };
+		280A43F629168FFF00837D43 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43F529168FFF00837D43 /* UIColor+extension.swift */; };
+		280A43FA2916B17400837D43 /* DetailBookViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43F82916B17400837D43 /* DetailBookViewCell.swift */; };
+		280A43FB2916B17400837D43 /* DetailBookViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280A43F92916B17400837D43 /* DetailBookViewCell.xib */; };
+		280A43FE2916B51500837D43 /* SearchBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43FC2916B51500837D43 /* SearchBookTableViewCell.swift */; };
+		280A43FF2916B51500837D43 /* SearchBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280A43FD2916B51500837D43 /* SearchBookTableViewCell.xib */; };
+		280A44012916D9B300837D43 /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A44002916D9B300837D43 /* DetailBookViewController.swift */; };
+		28748E11291819F60049DE10 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28748E10291819F60049DE10 /* UIView+extension.swift */; };
 		28975A1B2915A2190037D3C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28975A1A2915A2190037D3C0 /* AppDelegate.swift */; };
-		28975A1F2915A2190037D3C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28975A1E2915A2190037D3C0 /* ViewController.swift */; };
+		28975A1F2915A2190037D3C0 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28975A1E2915A2190037D3C0 /* SearchBookViewController.swift */; };
 		28975A222915A2190037D3C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28975A202915A2190037D3C0 /* Main.storyboard */; };
 		28975A242915A21E0037D3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28975A232915A21E0037D3C0 /* Assets.xcassets */; };
 		28975A272915A21E0037D3C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28975A252915A21E0037D3C0 /* LaunchScreen.storyboard */; };
@@ -28,9 +37,18 @@
 		280A43E42916899000837D43 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 		280A43E6291689A100837D43 /* BookSaleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSaleInfo.swift; sourceTree = "<group>"; };
 		280A43E8291689B100837D43 /* BookDataImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDataImage.swift; sourceTree = "<group>"; };
+		280A43F129168C3800837D43 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		280A43F329168CA600837D43 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		280A43F529168FFF00837D43 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		280A43F82916B17400837D43 /* DetailBookViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewCell.swift; sourceTree = "<group>"; };
+		280A43F92916B17400837D43 /* DetailBookViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBookViewCell.xib; sourceTree = "<group>"; };
+		280A43FC2916B51500837D43 /* SearchBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookTableViewCell.swift; sourceTree = "<group>"; };
+		280A43FD2916B51500837D43 /* SearchBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBookTableViewCell.xib; sourceTree = "<group>"; };
+		280A44002916D9B300837D43 /* DetailBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
+		28748E10291819F60049DE10 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		28975A172915A2190037D3C0 /* GBookBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBookBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28975A1A2915A2190037D3C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28975A1E2915A2190037D3C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28975A1E2915A2190037D3C0 /* SearchBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
 		28975A212915A2190037D3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28975A232915A21E0037D3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28975A262915A21E0037D3C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,7 +81,9 @@
 		280A43DB2916581000837D43 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28975A1E2915A2190037D3C0 /* ViewController.swift */,
+				280A43F72916B13F00837D43 /* Cell */,
+				28975A1E2915A2190037D3C0 /* SearchBookViewController.swift */,
+				280A44002916D9B300837D43 /* DetailBookViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -88,6 +108,43 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		280A43F229168C9800837D43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				280A43F329168CA600837D43 /* String+extension.swift */,
+				280A43F529168FFF00837D43 /* UIColor+extension.swift */,
+				28748E10291819F60049DE10 /* UIView+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		280A43F72916B13F00837D43 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				28748E13291829AC0049DE10 /* SearchBookTableViewCell */,
+				28748E12291829A10049DE10 /* DetailBookViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		28748E12291829A10049DE10 /* DetailBookViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				280A43F82916B17400837D43 /* DetailBookViewCell.swift */,
+				280A43F92916B17400837D43 /* DetailBookViewCell.xib */,
+			);
+			path = DetailBookViewCell;
+			sourceTree = "<group>";
+		};
+		28748E13291829AC0049DE10 /* SearchBookTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				280A43FC2916B51500837D43 /* SearchBookTableViewCell.swift */,
+				280A43FD2916B51500837D43 /* SearchBookTableViewCell.xib */,
+			);
+			path = SearchBookTableViewCell;
+			sourceTree = "<group>";
+		};
 		28975A0E2915A2190037D3C0 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +166,7 @@
 		28975A192915A2190037D3C0 /* GBookBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				280A43F229168C9800837D43 /* Extensions */,
 				280A43DF29165FBF00837D43 /* Objects */,
 				280A43DC2916582200837D43 /* Managers */,
 				280A43DB2916581000837D43 /* Controllers */,
@@ -117,6 +175,7 @@
 				28975A232915A21E0037D3C0 /* Assets.xcassets */,
 				28975A252915A21E0037D3C0 /* LaunchScreen.storyboard */,
 				28975A282915A21E0037D3C0 /* Info.plist */,
+				280A43F029168C2100837D43 /* Localizable.strings */,
 			);
 			path = GBookBrowser;
 			sourceTree = "<group>";
@@ -169,11 +228,11 @@
 			};
 			buildConfigurationList = 28975A122915A2190037D3C0 /* Build configuration list for PBXProject "GBookBrowser" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = cs;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				cs,
 			);
 			mainGroup = 28975A0E2915A2190037D3C0;
 			productRefGroup = 28975A182915A2190037D3C0 /* Products */;
@@ -190,7 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280A43FF2916B51500837D43 /* SearchBookTableViewCell.xib in Resources */,
 				28975A272915A21E0037D3C0 /* LaunchScreen.storyboard in Resources */,
+				280A43FB2916B17400837D43 /* DetailBookViewCell.xib in Resources */,
+				280A43EE29168C2100837D43 /* Localizable.strings in Resources */,
 				28975A242915A21E0037D3C0 /* Assets.xcassets in Resources */,
 				28975A222915A2190037D3C0 /* Main.storyboard in Resources */,
 			);
@@ -245,20 +307,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28975A1F2915A2190037D3C0 /* ViewController.swift in Sources */,
+				280A43FE2916B51500837D43 /* SearchBookTableViewCell.swift in Sources */,
+				28975A1F2915A2190037D3C0 /* SearchBookViewController.swift in Sources */,
+				280A43FA2916B17400837D43 /* DetailBookViewCell.swift in Sources */,
+				280A44012916D9B300837D43 /* DetailBookViewController.swift in Sources */,
 				28975A1B2915A2190037D3C0 /* AppDelegate.swift in Sources */,
 				280A43E52916899000837D43 /* BookData.swift in Sources */,
 				280A43E32916897E00837D43 /* BookItem.swift in Sources */,
 				280A43DE2916587300837D43 /* BookDataSourceManager.swift in Sources */,
 				280A43E7291689A100837D43 /* BookSaleInfo.swift in Sources */,
 				280A43E9291689B100837D43 /* BookDataImage.swift in Sources */,
+				28748E11291819F60049DE10 /* UIView+extension.swift in Sources */,
+				280A43F629168FFF00837D43 /* UIColor+extension.swift in Sources */,
 				280A43E1291670F300837D43 /* BookResponse.swift in Sources */,
+				280A43F429168CA600837D43 /* String+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		280A43F029168C2100837D43 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				280A43F129168C3800837D43 /* cs */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		28975A202915A2190037D3C0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -328,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -342,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -382,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -406,9 +484,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +515,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

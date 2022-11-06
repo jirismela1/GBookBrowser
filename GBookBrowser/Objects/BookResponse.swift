@@ -12,8 +12,8 @@ struct BookResponse: Decodable {
     
     //MARK: - Properties
     
-    let totalItems: Int
-    let items: [BookItem]
+    let totalItems: Int?
+    let items: [BookItem]?
     
     
     //MARK: - Parse enum

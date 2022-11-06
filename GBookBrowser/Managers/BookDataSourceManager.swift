@@ -15,15 +15,14 @@ class BookDataSourceManager {
     //MARK: - Properties
     
     private let apiKey = "AIzaSyC_f_LHMVJ_Z76QAXlPaanYGufcW5IhM_I"
-    
     private let url = "https://www.googleapis.com/books/v1/volumes?q=inauthor:"
-    
-    
-    private static var sharedManager: BookDataSourceManager?
+    var items = [BookItem]()
+    private var totalItems = 0
     
     
     //MARK: - Singleton
     
+    private static var sharedManager: BookDataSourceManager?
     
     static func shared() -> BookDataSourceManager {
         if sharedManager == nil {
@@ -35,27 +34,48 @@ class BookDataSourceManager {
     
     //MARK: - Functions
     
-    func fetchBooks(by author: String = "", page: Int = 0, maxResults: Int = 40) -> DataRequest {
+    /**
+     j
+     
+     - parameter author:            String
+     - parameter resetDataSource:   Bool = false
+     - parameter callback:          ((_ success: Bool)->Void)?
+     
+     - returns: DataRequest?
+     */
+    func loadBooks(by author: String, resetDataSource: Bool = false, callback: ((_ success: Bool)->Void)?) -> DataRequest? {
         
-        var param: Parameters = [:]
+        if resetDataSource {
+            items.removeAll()
+            totalItems = 0
+        }
         
-        // set parameters
-        param["maxResults"] = maxResults
-        param["printType"] = "books"
-        param["startIndex"] = page
-        param["langRestrict"] = "cs"
-        param["key"] = apiKey
-        
-        // request
-        return AF.request(url + author.replacingOccurrences(of: " ", with: "+"), method: .get, parameters: param, encoding: URLEncoding.default).validate().responseDecodable(of: BookResponse.self) { response in
-            switch response.result {
-            case .success(let item):
-                item.items.forEach({ item in
-                    print(item.saleInfo?.buyLink)
-                })
-            case .failure(let error):
-                print(error)
+        if items.count != totalItems || resetDataSource {
+            
+            var param: Parameters = [:]
+            
+            // set parameters
+            param["maxResults"] = 40
+            param["printType"] = "books"
+            param["startIndex"] = items.count
+            param["langRestrict"] = "cs"
+            param["key"] = apiKey
+            
+            // request
+            return AF.request(url + author.replacingOccurrences(of: " ", with: "+"), method: .get, parameters: param, encoding: URLEncoding.default).validate().responseDecodable(of: BookResponse.self) { response in
+                switch response.result {
+                case .success(let item):
+                    self.totalItems = item.totalItems ?? 0
+                    if let items = item.items {
+                        self.items.append(contentsOf: items)
+                    }
+                    callback?(true)
+                case .failure(_):
+                    callback?(false)
+                }
             }
         }
+        
+        return nil
     }
 }
