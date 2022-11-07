@@ -33,8 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     splash.trailingAnchor.constraint(equalTo: splash.superview!.trailingAnchor).isActive = true
                  
                     // schedule for dismis splash
-                    Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { _ in
-                        splash.removeFromSuperview()
+                    Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false) { _ in
+                        UIView.animate(withDuration: 0.5) {
+                            splash.alpha = 0
+                        } completion: { _ in
+                            splash.removeFromSuperview()
+                        }
                     }
                 }
             }

@@ -34,7 +34,7 @@ class SearchBookViewController: UIViewController {
         super.viewDidLoad()
         
         // navigation bar
-        prepareNavigationBar()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         prepareSearchController()
         
         // tableView
@@ -96,17 +96,6 @@ class SearchBookViewController: UIViewController {
         }
     }
     
-    /**
-     Prepare navigation bar
-     */
-    private func prepareNavigationBar() {
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.barStyle = .black
-        // transparent navigation bar
-        navigationController?.navigationBar.standardAppearance.configureWithTransparentBackground()
-        navigationController?.navigationBar.scrollEdgeAppearance?.configureWithTransparentBackground()
-    }
-    
     
     //MARK: - Keyboard
     
@@ -148,7 +137,7 @@ class SearchBookViewController: UIViewController {
         requestTimer = nil
         
         // clear tableView and dataSource
-        BookDataSourceManager.shared().items.removeAll()
+        ManagerBookDataSource.shared().items.removeAll()
         tableView.reloadData()
         
         // default info text
@@ -167,7 +156,7 @@ class SearchBookViewController: UIViewController {
         infoSearchView.isHidden = true
         // set timer - delay 0.5 seconds
         requestTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { _ in
-            self.request = BookDataSourceManager.shared().loadBooks(by: searchText, resetDataSource: true) { success in
+            self.request = ManagerBookDataSource.shared().loadBooks(by: searchText, resetDataSource: true) { success in
                 if success {
                     // hide indicator
                     self.activityIndicator.isHidden = true
@@ -176,7 +165,7 @@ class SearchBookViewController: UIViewController {
                     // nill request
                     self.request = nil
                     // empty result
-                    if BookDataSourceManager.shared().items.isEmpty {
+                    if ManagerBookDataSource.shared().items.isEmpty {
                         self.infoSearchView.isHidden = false
                         self.infoLabel.text = "search_book_info_label_no_results".localized
                     }
@@ -210,16 +199,16 @@ extension SearchBookViewController: UISearchBarDelegate {
 extension SearchBookViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return BookDataSourceManager.shared().items.count
+        return ManagerBookDataSource.shared().items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SearchBookTableViewCell", for: indexPath) as! SearchBookTableViewCell
-        cell.prepareItem(BookDataSourceManager.shared().items[indexPath.row].data)
+        cell.prepareItem(ManagerBookDataSource.shared().items[indexPath.row].data)
         
         // "paging"
-        if indexPath.row == BookDataSourceManager.shared().items.count - 20, let searchText = searchController.searchBar.text {
-            request = BookDataSourceManager.shared().loadBooks(by: searchText) { success in
+        if indexPath.row == ManagerBookDataSource.shared().items.count - 20, let searchText = searchController.searchBar.text {
+            request = ManagerBookDataSource.shared().loadBooks(by: searchText) { success in
                 if success {
                     // refresh tableView
                     tableView.reloadData()

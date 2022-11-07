@@ -74,25 +74,24 @@ class DetailBookViewController: UIViewController {
      Set new data to content
      */
     private func prepareView() {
-        let data = BookDataSourceManager.shared().items[selectedIndex].data
+        let data = ManagerBookDataSource.shared().items[selectedIndex].data
+        // set animation
+        [descriptionTextView, titleLabel, publishedDateLabel].forEach { $0.fadeTransition(0.2) }
         // description
-        descriptionTextView.fadeTransition(0.2)
         self.descriptionTextView.text = data?.description ?? "book_detail_desription_is_empty".localized
         // title
-        titleLabel.fadeTransition(0.2)
         titleLabel.text = data?.title
         // published date
-        publishedDateLabel.fadeTransition(0.2)
         publishedDateLabel.text = data?.getPublishedYear()
         // enable right bar item
-        navigationItem.rightBarButtonItem?.isEnabled = !(BookDataSourceManager.shared().items[selectedIndex].saleInfo?.buyLink == nil)
+        navigationItem.rightBarButtonItem?.isEnabled = !(ManagerBookDataSource.shared().items[selectedIndex].saleInfo?.buyLink == nil)
     }
     
     /**
      Change background image
      */
     private func changeBackgroundImage() {
-        if let imageLink = BookDataSourceManager.shared().items[selectedIndex].data?.imageLinks?.getImageLink(), let url = URL(string: imageLink) {
+        if let imageLink = ManagerBookDataSource.shared().items[selectedIndex].data?.imageLinks?.getImageLink(), let url = URL(string: imageLink) {
             // download image
             KingfisherManager.shared.retrieveImage(with: url) { results in
                 self.backgroundImageView.transitionCrossDissolveAnimation {
@@ -131,7 +130,7 @@ class DetailBookViewController: UIViewController {
     }
     
     @objc func buyBookAction(sender: UIBarButtonItem) {
-        if let linkString = BookDataSourceManager.shared().items[selectedIndex].saleInfo?.buyLink,
+        if let linkString = ManagerBookDataSource.shared().items[selectedIndex].saleInfo?.buyLink,
            let url = URL(string: linkString), UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
         }
@@ -162,16 +161,16 @@ class DetailBookViewController: UIViewController {
 extension DetailBookViewController: FSPagerViewDataSource, FSPagerViewDelegate {
     
     func numberOfItems(in pagerView: FSPagerView) -> Int {
-        return BookDataSourceManager.shared().items.count
+        return ManagerBookDataSource.shared().items.count
     }
     
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "DetailBookViewCell", at: index) as! DetailBookViewCell
-        cell.prepareItem(BookDataSourceManager.shared().items[index].data?.imageLinks?.getImageLink())
+        cell.prepareItem(ManagerBookDataSource.shared().items[index].data?.imageLinks?.getImageLink())
         
         // "paging"
-        if index == BookDataSourceManager.shared().items.count - 20, let searchText = self.searchText {
-            _=BookDataSourceManager.shared().loadBooks(by: searchText) { success in
+        if index == ManagerBookDataSource.shared().items.count - 20, let searchText = self.searchText {
+            _=ManagerBookDataSource.shared().loadBooks(by: searchText) { success in
                 if success {
                     // refresh pagerView
                     self.pagerView.reloadData()

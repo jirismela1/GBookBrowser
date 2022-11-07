@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C453089EE3563F4CD1D87A8 /* Pods_GBookBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB0A505288380D09A90D9F0 /* Pods_GBookBrowser.framework */; };
-		280A43DE2916587300837D43 /* BookDataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43DD2916587300837D43 /* BookDataSourceManager.swift */; };
+		280A43DE2916587300837D43 /* ManagerBookDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43DD2916587300837D43 /* ManagerBookDataSource.swift */; };
 		280A43E1291670F300837D43 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43E0291670F300837D43 /* BookResponse.swift */; };
 		280A43E32916897E00837D43 /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43E22916897E00837D43 /* BookItem.swift */; };
 		280A43E52916899000837D43 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A43E42916899000837D43 /* BookData.swift */; };
@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		280A43DD2916587300837D43 /* BookDataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDataSourceManager.swift; sourceTree = "<group>"; };
+		280A43DD2916587300837D43 /* ManagerBookDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerBookDataSource.swift; sourceTree = "<group>"; };
 		280A43E0291670F300837D43 /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
 		280A43E22916897E00837D43 /* BookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
 		280A43E42916899000837D43 /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		280A43DC2916582200837D43 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				280A43DD2916587300837D43 /* BookDataSourceManager.swift */,
+				280A43DD2916587300837D43 /* ManagerBookDataSource.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 				28975A1B2915A2190037D3C0 /* AppDelegate.swift in Sources */,
 				280A43E52916899000837D43 /* BookData.swift in Sources */,
 				280A43E32916897E00837D43 /* BookItem.swift in Sources */,
-				280A43DE2916587300837D43 /* BookDataSourceManager.swift in Sources */,
+				280A43DE2916587300837D43 /* ManagerBookDataSource.swift in Sources */,
 				280A43E7291689A100837D43 /* BookSaleInfo.swift in Sources */,
 				280A43E9291689B100837D43 /* BookDataImage.swift in Sources */,
 				28748E11291819F60049DE10 /* UIView+extension.swift in Sources */,
@@ -488,7 +488,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -519,7 +520,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

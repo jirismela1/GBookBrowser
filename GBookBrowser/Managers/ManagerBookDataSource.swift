@@ -1,5 +1,5 @@
 //
-//  BookDataSourceManager.swift
+//  ManagerBookDataSource.swift
 //  GBookBrowser
 //
 //  Created by Jiří Šmela on 05.11.2022.
@@ -9,7 +9,7 @@ import Foundation
 // pods
 import Alamofire
 
-class BookDataSourceManager {
+class ManagerBookDataSource {
     
     
     //MARK: - Properties
@@ -22,11 +22,11 @@ class BookDataSourceManager {
     
     //MARK: - Singleton
     
-    private static var sharedManager: BookDataSourceManager?
+    private static var sharedManager: ManagerBookDataSource?
     
-    static func shared() -> BookDataSourceManager {
+    static func shared() -> ManagerBookDataSource {
         if sharedManager == nil {
-            sharedManager = BookDataSourceManager()
+            sharedManager = ManagerBookDataSource()
         }
         return sharedManager!
     }
@@ -35,7 +35,7 @@ class BookDataSourceManager {
     //MARK: - Functions
     
     /**
-     j
+     Fetch data from api call
      
      - parameter author:            String
      - parameter resetDataSource:   Bool = false

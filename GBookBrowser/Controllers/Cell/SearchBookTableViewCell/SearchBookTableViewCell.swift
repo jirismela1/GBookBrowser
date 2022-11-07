@@ -47,9 +47,9 @@ class SearchBookTableViewCell: UITableViewCell {
         titleLabel.text = data?.title
         authorLabel.text = data?.authors?.joined(separator: ",")
         
-        // download image
-        thumbnailImageView.kf.indicatorType = .activity
         if let urlLink = data?.imageLinks?.getImageLink(), let url = URL(string: urlLink) {
+            // download image
+            thumbnailImageView.kf.indicatorType = .activity
             thumbnailImageView.contentMode = .scaleAspectFill
             KingfisherManager.shared.retrieveImage(with: url) { result in
                 switch result {
